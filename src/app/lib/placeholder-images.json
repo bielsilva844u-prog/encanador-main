@@ -1,0 +1,53 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "logo",
+      "description": "Logo Encanador Sao Paulo Oficial",
+      "imageUrl": "https://i.ibb.co/FLmrMq09/Chat-GPT-Image-8-05-2026-08-50-58.png",
+      "imageHint": "plumber logo"
+    },
+    {
+      "id": "hero-plumber",
+      "description": "Encanador profissional trabalhando",
+      "imageUrl": "https://picsum.photos/seed/plumber1/1200/600",
+      "imageHint": "plumber working"
+    },
+    {
+      "id": "service-reparo",
+      "description": "Reparo de Encanamentos",
+      "imageUrl": "https://encanadorguarulhos.com.br/wp-content/uploads/2025/07/reparo-de-encanamentos-768x402.jpg",
+      "imageHint": "plumbing repair"
+    },
+    {
+      "id": "service-caca",
+      "description": "Caça Vazamentos",
+      "imageUrl": "https://encanadorguarulhos.com.br/wp-content/uploads/2025/07/caca-vazamentos-1024x537.jpg",
+      "imageHint": "leak detection"
+    },
+    {
+      "id": "service-pia",
+      "description": "Desentupimento de Pia",
+      "imageUrl": "https://encanadorguarulhos.com.br/wp-content/uploads/2025/07/desentupimento-de-pia-1024x537.jpg",
+      "imageHint": "sink unclogging"
+    },
+    {
+      "id": "service-ralo",
+      "description": "Desentupimento de Ralo",
+      "imageUrl": "https://encanadorguarulhos.com.br/wp-content/uploads/2025/07/desentupimento-de-ralo-1024x537.jpg",
+      "imageHint": "drain unclogging"
+    },
+    {
+      "id": "service-vaso",
+      "description": "Desentupimento de Vaso",
+      "imageUrl": "https://encanadorguarulhos.com.br/wp-content/uploads/2025/07/desentupimento-de-vaso-1024x537.jpg",
+      "imageHint": "toilet unclogging"
+    },
+    {
+      "id": "service-esgoto",
+      "description": "Desentupimento de Esgoto",
+      "imageUrl": "https://encanadorguarulhos.com.br/wp-content/uploads/2025/07/desentupimento-de-esgoto-1024x537.jpg",
+      "imageHint": "sewer cleaning"
+    }
+  ]
+}
