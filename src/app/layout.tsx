@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MJ Serviços e Soluções | Desentupimento, Limpezas e Dedetização",
-  description: "MJ Serviços e Soluções: desentupimento, limpezas e dedetização em São Paulo e região. Atendimento pelo WhatsApp (11) 96727-3555.",
+  title: "MJ Serviços e Soluções | Limpezas, Reformas, Elétrica e Construção",
+  description:
+    "MJ Serviços e Soluções: desentupimento, limpezas, dedetização, elétrica, telhado, reparos, reformas e construção em São Paulo e região. WhatsApp (11) 96727-3555.",
 };
 
 export default function RootLayout({

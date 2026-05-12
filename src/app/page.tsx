@@ -2,13 +2,11 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
-  Bug,
   CheckCircle2,
   Clock,
   MapPin,
   Phone,
   ShieldCheck,
-  Sparkles,
   Star,
   Wrench,
 } from "lucide-react";
@@ -31,24 +29,39 @@ const services = [
     image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Limpezas técnicas",
-    desc: "Limpeza de caixas, calhas, áreas críticas e pontos que exigem manutenção para evitar mau cheiro e obstruções.",
-    image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80",
-  },
-  {
     title: "Dedetização",
     desc: "Controle de pragas urbanas em ambientes residenciais e comerciais, com aplicação conforme a necessidade do local.",
     image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80",
   },
   {
+    title: "Elétrica",
+    desc: "Pequenos reparos elétricos, troca de tomadas, interruptores, luminárias, disjuntores e ajustes pontuais na instalação.",
+    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Telhado",
+    desc: "Manutenção, reparos, substituição de peças e correções para reduzir infiltrações e problemas de cobertura.",
+    image: "https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Reparos",
+    desc: "Serviços pontuais para manutenção do imóvel, ajustes, consertos e melhorias em áreas internas e externas.",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Reformas",
+    desc: "Apoio em reformas residenciais e comerciais, com execução organizada e alinhamento claro antes do serviço.",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Construção",
+    desc: "Serviços de construção e melhorias para imóveis, com atendimento conforme a necessidade e o tamanho do projeto.",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80",
+  },
+  {
     title: "Caixa de gordura",
     desc: "Limpeza e desobstrução para reduzir retorno, mau cheiro, lentidão no escoamento e riscos de entupimento.",
     image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Atendimento emergencial",
-    desc: "Suporte rápido para entupimento, vazamento, retorno de esgoto, mau cheiro e situações que precisam de resposta imediata.",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80",
   },
 ];
 
@@ -70,7 +83,7 @@ const steps = [
   },
   {
     title: "Avaliação objetiva",
-    desc: "A equipe entende a urgência, orienta o cliente e combina o melhor horário.",
+    desc: "A equipe entende a necessidade, orienta o cliente e combina o melhor horário.",
   },
   {
     title: "Execução profissional",
@@ -80,11 +93,11 @@ const steps = [
 
 const faqs = [
   {
-    question: "A MJ atende desentupimento urgente?",
+    question: "A MJ atende serviços urgentes?",
     answer: "Sim. Envie uma mensagem pelo WhatsApp, explique o problema e mande fotos ou vídeos para agilizar a orientação.",
   },
   {
-    question: "Vocês fazem limpeza e dedetização no mesmo atendimento?",
+    question: "Vocês fazem mais de um serviço no mesmo atendimento?",
     answer: "Quando a agenda e o tipo de serviço permitem, é possível combinar mais de uma solução na mesma visita.",
   },
   {
@@ -123,7 +136,7 @@ export default function Home() {
             <div className="max-w-3xl">
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white shadow-sm backdrop-blur">
                 <ShieldCheck className="h-4 w-4 text-emerald-300" />
-                Empresa especializada em serviços essenciais
+                Serviços essenciais para residências, condomínios e empresas
               </div>
 
               <h1 className="max-w-3xl text-4xl font-black leading-[1.04] tracking-normal sm:text-5xl lg:text-7xl">
@@ -131,7 +144,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-100 sm:text-xl">
-                Desentupimento, limpezas e dedetização para residências, condomínios e empresas. Atendimento rápido, comunicação clara e serviço bem executado.
+                Desentupimento, limpezas, dedetização, elétrica, telhado, reparos, reformas e construção com atendimento rápido, comunicação clara e serviço bem executado.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -188,7 +201,7 @@ export default function Home() {
               </div>
 
               <div className="mt-5 grid grid-cols-3 gap-2 text-center">
-                {["Desentupimento", "Limpezas", "Dedetização"].map((item) => (
+                {["Desentupimento", "Elétrica", "Reformas", "Limpezas", "Telhado", "Dedetização"].map((item) => (
                   <div key={item} className="rounded-md border border-slate-200 px-2 py-3 text-xs font-black uppercase tracking-wide text-primary">
                     {item}
                   </div>
@@ -223,10 +236,10 @@ export default function Home() {
             <div className="mb-10 max-w-3xl">
               <p className="mb-3 text-sm font-black uppercase tracking-wide text-accent">Serviços da MJ</p>
               <h2 className="text-3xl font-black tracking-normal text-slate-950 sm:text-4xl">
-                Soluções para manter o ambiente limpo, seguro e funcionando
+                Soluções para manutenção, limpeza e melhorias no imóvel
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
-                Atendimento para desentupimentos, higienizações, limpezas técnicas e controle de pragas com foco em agilidade e organização.
+                Atendimento para serviços essenciais e serviços gerais, com foco em agilidade, organização e orientação clara antes da execução.
               </p>
             </div>
 
@@ -281,8 +294,8 @@ export default function Home() {
                   desc: "Atendimento para casas, apartamentos, condomínios, lojas e empresas.",
                 },
                 {
-                  title: "Comunicação clara",
-                  desc: "O cliente recebe orientação objetiva antes da execução do serviço.",
+                  title: "Serviços completos",
+                  desc: "Soluções para limpeza, manutenção, elétrica, telhado, reparos, reformas e construção.",
                 },
               ].map((item) => (
                 <div key={item.title} className="rounded-lg border border-slate-200 bg-slate-50 p-6">
@@ -333,7 +346,7 @@ export default function Home() {
                   <p className="mb-3 text-sm font-black uppercase tracking-wide text-accent">Contato e localização</p>
                   <h2 className="text-3xl font-black tracking-normal text-white sm:text-4xl">MJ Serviços no Parque Cisper</h2>
                   <p className="mt-4 text-base leading-8 text-slate-100 sm:text-lg">
-                    Atendimento residencial, condominial e comercial para desentupimento, limpezas e dedetização.
+                    Atendimento residencial, condominial e comercial para limpeza, manutenção, reparos, reformas, construção e demais soluções.
                   </p>
 
                   <div className="mt-7 space-y-3">
@@ -382,7 +395,7 @@ export default function Home() {
                 Informações importantes antes do atendimento
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
-                Respostas rápidas para quem precisa contratar desentupimento, limpeza ou dedetização.
+                Respostas rápidas para quem precisa contratar serviços de limpeza, manutenção, reparos, reformas ou construção.
               </p>
             </div>
 
@@ -409,7 +422,7 @@ export default function Home() {
                   Envie uma mensagem explicando o serviço. Se tiver, mande foto ou vídeo para agilizar a orientação.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold text-slate-200">
-                  {["Desentupimento", "Limpezas", "Dedetização"].map((item) => (
+                  {["Desentupimento", "Elétrica", "Telhado", "Reparos", "Reformas", "Construção"].map((item) => (
                     <span key={item} className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-2">
                       <CheckCircle2 className="h-4 w-4 text-emerald-300" />
                       {item}
@@ -441,7 +454,7 @@ export default function Home() {
 
       <footer className="bg-slate-950 px-5 py-8 text-center text-sm text-slate-400">
         <p className="font-semibold text-white">MJ Serviços e Soluções</p>
-        <p className="mt-2">Desentupimento, limpezas e dedetização em São Paulo e região.</p>
+        <p className="mt-2">Desentupimento, limpezas, dedetização, elétrica, telhado, reparos, reformas e construção.</p>
         <p className="mt-2">{address} | {phoneDisplay}</p>
       </footer>
     </div>
