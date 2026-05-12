@@ -1,45 +1,53 @@
 "use client";
 
 import Link from "next/link";
-import { Clock, Home, Menu, Phone, Wrench } from "lucide-react";
+import { Home, MapPin, Menu, Phone, ShieldCheck, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
+const phoneNumber = "5511967273555";
+const phoneDisplay = "(11) 96727-3555";
+const address = "R. José Luiz de Brito, 210 - Parque Cisper";
 const whatsappUrl =
-  "https://wa.me/5511998471173?text=Oi%2C%20vim%20pelo%20site%20e%20preciso%20de%20um%20encanador%20em%20S%C3%A3o%20Paulo.";
+  `https://wa.me/${phoneNumber}?text=${encodeURIComponent("Oi, vim pelo site da MJ Serviços e preciso de atendimento.")}`;
+
+const logoUrl = "https://i.ibb.co/MxgTp32w/foto.jpg";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-[0_4px_20px_rgba(15,23,42,0.08)]">
       <div className="hidden bg-primary text-white md:block">
         <div className="mx-auto flex h-9 max-w-7xl items-center justify-between px-8 text-[13px] font-medium">
-          <span>Atendimento hidráulico 24h em São Paulo e região</span>
+          <span className="inline-flex items-center gap-2">
+            <MapPin className="h-4 w-4 text-blue-200" />
+            {address}
+          </span>
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-semibold">
-            <Phone className="h-4 w-4 text-emerald-300" />
-            Chamar no WhatsApp
+            <Phone className="h-4 w-4 text-blue-200" />
+            {phoneDisplay}
           </a>
         </div>
       </div>
 
-      <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-4 md:h-[82px] md:px-8">
-        <Link href="/" className="flex min-w-0 items-center gap-3" aria-label="Encanador na sua região">
-          <span className="relative flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-lg bg-primary text-white shadow-sm md:h-14 md:w-14">
-            <span className="absolute right-1.5 top-1.5 h-2.5 w-2.5 rounded-full bg-accent" />
-            <span className="text-[26px] font-black leading-none tracking-tight">E</span>
-            <span className="absolute bottom-2 left-2 h-2 w-7 rounded-full border-2 border-white/80 border-t-transparent" />
+      <div className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-4 md:h-[82px] md:px-8">
+        <Link href="/" className="flex min-w-0 items-center gap-2.5 md:gap-3" aria-label="MJ Serviços e Soluções">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-slate-200 md:h-14 md:w-14">
+            <img src={logoUrl} alt="Logo MJ Serviços" className="h-full w-full object-contain" />
           </span>
 
           <span className="min-w-0">
             <span className="flex items-center gap-2">
-              <span className="text-[23px] font-black leading-none tracking-tight text-slate-950 sm:text-[30px]">
-                Encanador
+              <span className="text-[19px] font-black leading-none tracking-tight text-slate-950 sm:text-[26px] md:text-[30px]">
+                MJ Serviços
               </span>
               <span className="hidden rounded-full bg-accent px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-white sm:inline-flex">
                 24h
               </span>
             </span>
-            <span className="mt-1.5 block text-[12px] font-extrabold uppercase leading-none tracking-[0.18em] text-primary sm:text-[13px]">
-              na sua região
+            <span className="mt-1 flex max-w-[230px] flex-wrap gap-x-2 gap-y-0.5 text-[9px] font-bold uppercase leading-[1.2] tracking-[0.12em] text-primary sm:max-w-none sm:text-[11px] md:text-[12px]">
+              <span>Desentupimento</span>
+              <span>Limpezas</span>
+              <span>Dedetização</span>
             </span>
           </span>
         </Link>
@@ -50,6 +58,9 @@ export default function Header() {
           </Link>
           <Link href="#servicos" className="text-[13px] font-bold uppercase tracking-wide text-slate-700 transition hover:text-accent">
             Serviços
+          </Link>
+          <Link href="#contato" className="text-[13px] font-bold uppercase tracking-wide text-slate-700 transition hover:text-accent">
+            Contato
           </Link>
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
             <Button className="h-11 rounded-md bg-accent px-5 font-bold text-white shadow-sm hover:bg-accent/90">
@@ -69,10 +80,10 @@ export default function Header() {
           <SheetContent side="right" className="w-[86vw] max-w-[340px] border-l-0 p-0">
             <div className="bg-primary px-6 pb-6 pt-8 text-white">
               <SheetTitle className="text-left text-2xl font-extrabold text-white">
-                Encanador na sua região
+                MJ Serviços e Soluções
               </SheetTitle>
               <p className="mt-3 text-sm leading-6 text-blue-50">
-                Atendimento hidráulico 24h em São Paulo para vazamentos, reparos e desentupimentos.
+                Desentupimento, limpezas e dedetização com atendimento rápido em São Paulo e região.
               </p>
             </div>
 
@@ -88,14 +99,19 @@ export default function Header() {
                   <Wrench className="h-5 w-5 text-primary" />
                   Serviços
                 </Link>
+                <Link href="#contato" className="flex items-center gap-3 py-4 text-[15px] font-semibold text-slate-800">
+                  <MapPin className="h-5 w-5 text-primary" />
+                  Contato
+                </Link>
               </nav>
 
               <div className="mt-6 rounded-md bg-slate-50 p-4">
                 <div className="flex items-start gap-3">
-                  <Clock className="mt-0.5 h-5 w-5 text-accent" />
+                  <ShieldCheck className="mt-0.5 h-5 w-5 text-accent" />
                   <div>
-                    <p className="font-bold text-slate-950">Plantão 24h</p>
-                    <p className="mt-1 text-sm leading-6 text-slate-600">Envie uma mensagem e explique o problema.</p>
+                    <p className="font-bold text-slate-950">Atendimento rápido</p>
+                    <p className="mt-1 text-sm leading-6 text-slate-600">{phoneDisplay}</p>
+                    <p className="mt-1 text-sm leading-6 text-slate-600">{address}</p>
                   </div>
                 </div>
               </div>

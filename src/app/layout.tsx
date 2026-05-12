@@ -1,9 +1,9 @@
-import type {Metadata} from 'next';
-import './globals.css';
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Encanador São Paulo 24h',
-  description: 'Encanador em São Paulo para vazamentos, desentupimentos e reparos hidráulicos.',
+  title: "MJ Serviços e Soluções | Desentupimento, Limpezas e Dedetização",
+  description: "MJ Serviços e Soluções: desentupimento, limpezas e dedetização em São Paulo e região. Atendimento pelo WhatsApp (11) 96727-3555.",
 };
 
 export default function RootLayout({
