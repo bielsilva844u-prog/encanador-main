@@ -52,7 +52,7 @@ const mainServices = [
     image:
       "https://i.ibb.co/twsFtjFm/reforma-de-telhados-dicas-e-informacoes-importantes.webp",
     alt: "Profissional fazendo manutenção em telhado",
-    desc: "Telhadista para conserto de telhado, manutenção, limpeza de calha, limpeza de rufos e correção de infiltrações.",
+    desc: "Telhadista para conserto de telhado, manutenção, limpeza de calha, instalação de rufos e correção de infiltrações.",
   },
   {
     title: "Reformas",
@@ -95,18 +95,18 @@ const additionalServices = [
     desc: "Retirada de folhas e sujeiras para melhorar o escoamento da água da chuva.",
   },
   {
-    title: "Limpeza de rufos",
+    title: "Instalação de rufos",
     imageName: "mj-servicos-limpeza-de-rufos.jpg",
     image: "https://i.ibb.co/mVSF2PMW/limpeza-calhas-rufos-01.webp",
-    alt: "Limpeza profissional de rufos e calhas",
-    desc: "Manutenção preventiva para evitar infiltrações e acúmulo de sujeira na cobertura.",
+    alt: "Instalação profissional de rufos e calhas",
+    desc: "Instalação de rufos sob medida para proteger encontros de telhado, paredes e calhas contra infiltrações.",
   },
 ];
 
 const roofServices = [
   "Telhadista",
   "Limpeza de calha",
-  "Limpeza de rufos",
+  "Instalação de rufos",
   "Conserto de telhado",
   "Manutenção de telhado",
   "Correção de infiltrações",

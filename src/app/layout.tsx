@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "telhadista",
     "conserto de telhado",
     "limpeza de calha",
-    "limpeza de rufos",
+    "instalação de rufos",
     "dedetização",
     "reformas",
     "Guarulhos",
