@@ -2,9 +2,35 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MJ Serviços e Soluções | Limpezas, Reformas, Elétrica e Construção",
+  title: "MJ Serviços | Desentupimento, Limpezas, Elétrica e Telhado em São Paulo",
   description:
-    "MJ Serviços e Soluções: desentupimento, limpezas, dedetização, elétrica, telhado, reparos, reformas e construção em São Paulo e região. WhatsApp (11) 96727-3555.",
+    "MJ Serviços em São Paulo: desentupimento, limpezas, limpeza de caixa d'água, elétrica, telhado, dedetização, reformas e reparos. Atendimento pelo WhatsApp (11) 96727-3555.",
+  keywords: [
+    "MJ Serviços",
+    "desentupimento em São Paulo",
+    "limpeza de caixa d'água",
+    "limpeza de caixa de gordura",
+    "eletricista em São Paulo",
+    "telhadista",
+    "conserto de telhado",
+    "limpeza de calha",
+    "limpeza de rufos",
+    "dedetização",
+    "reformas",
+    "Guarulhos",
+    "Osasco",
+    "Santo André",
+    "São Bernardo",
+    "Barueri",
+    "Alphaville",
+  ],
+  openGraph: {
+    title: "MJ Serviços | Soluções profissionais em São Paulo",
+    description:
+      "Desentupimento, limpezas, elétrica, telhado, reformas e dedetização para residências, comércios, condomínios e empresas.",
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

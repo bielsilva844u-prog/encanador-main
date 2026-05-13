@@ -8,8 +8,9 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 const phoneNumber = "5511967273555";
 const phoneDisplay = "(11) 96727-3555";
 const address = "R. José Luiz de Brito, 210 - Parque Cisper";
-const whatsappUrl =
-  `https://wa.me/${phoneNumber}?text=${encodeURIComponent("Oi, vim pelo site da MJ Serviços e preciso de atendimento.")}`;
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+  "Olá, vim pelo site da MJ Serviços e preciso de atendimento."
+)}`;
 
 const logoUrl = "https://i.ibb.co/MxgTp32w/foto.jpg";
 
@@ -32,7 +33,7 @@ export default function Header() {
       <div className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-4 md:h-[82px] md:px-8">
         <Link href="/" className="flex min-w-0 items-center gap-2.5 md:gap-3" aria-label="MJ Serviços e Soluções">
           <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-slate-200 md:h-14 md:w-14">
-            <img src={logoUrl} alt="Logo MJ Serviços" className="h-full w-full object-contain" />
+            <img src={logoUrl} alt="Logo MJ Serviços e Soluções" className="h-full w-full object-contain" />
           </span>
 
           <span className="min-w-0">
@@ -43,11 +44,6 @@ export default function Header() {
               <span className="hidden rounded-full bg-accent px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-white sm:inline-flex">
                 24h
               </span>
-            </span>
-            <span className="mt-1 flex max-w-[230px] flex-wrap gap-x-2 gap-y-0.5 text-[9px] font-bold uppercase leading-[1.2] tracking-[0.12em] text-primary sm:max-w-none sm:text-[11px] md:text-[12px]">
-              <span>Desentupimento</span>
-              <span>Limpezas</span>
-              <span>Dedetização</span>
             </span>
           </span>
         </Link>
@@ -83,7 +79,7 @@ export default function Header() {
                 MJ Serviços e Soluções
               </SheetTitle>
               <p className="mt-3 text-sm leading-6 text-blue-50">
-                Desentupimento, limpezas e dedetização com atendimento rápido em São Paulo e região.
+                Desentupimento, limpezas, elétrica, telhado, reformas e dedetização em São Paulo e região.
               </p>
             </div>
 
